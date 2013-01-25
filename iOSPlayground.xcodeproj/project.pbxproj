@@ -117,8 +117,6 @@
 		E79A051E16B313E700409181 /* iOSPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				E79A052716B313E700409181 /* PlaygroundAppDelegate.h */,
-				E79A052816B313E700409181 /* PlaygroundAppDelegate.m */,
 				E79A053016B313E700409181 /* PlaygroundViewController.h */,
 				E79A053116B313E700409181 /* PlaygroundViewController.m */,
 				E79A053316B313E700409181 /* PlaygroundViewController.xib */,
@@ -130,6 +128,8 @@
 		E79A051F16B313E700409181 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E79A052716B313E700409181 /* PlaygroundAppDelegate.h */,
+				E79A052816B313E700409181 /* PlaygroundAppDelegate.m */,
 				E79A052016B313E700409181 /* iOSPlayground-Info.plist */,
 				E79A052116B313E700409181 /* InfoPlist.strings */,
 				E79A052416B313E700409181 /* main.m */,

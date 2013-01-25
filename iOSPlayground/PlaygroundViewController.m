@@ -14,10 +14,13 @@
 
 @implementation PlaygroundViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  
+  self.playgroundAreaView =
+    [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+  
+  [self.view addSubview:self.playgroundAreaView];
 }
 
 - (void)didReceiveMemoryWarning

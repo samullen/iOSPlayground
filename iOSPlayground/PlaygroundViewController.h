@@ -10,4 +10,6 @@
 
 @interface PlaygroundViewController : UIViewController
 
+@property (nonatomic, strong) UITableView *playgroundAreaView;
+
 @end
