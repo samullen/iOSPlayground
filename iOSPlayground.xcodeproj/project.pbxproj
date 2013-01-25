@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E79A051916B313E700409181 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A051816B313E700409181 /* UIKit.framework */; };
+		E79A051B16B313E700409181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A051A16B313E700409181 /* Foundation.framework */; };
+		E79A051D16B313E700409181 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A051C16B313E700409181 /* CoreGraphics.framework */; };
+		E79A052316B313E700409181 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E79A052116B313E700409181 /* InfoPlist.strings */; };
+		E79A052516B313E700409181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79A052416B313E700409181 /* main.m */; };
+		E79A052916B313E700409181 /* PlaygroundAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E79A052816B313E700409181 /* PlaygroundAppDelegate.m */; };
+		E79A052B16B313E700409181 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E79A052A16B313E700409181 /* Default.png */; };
+		E79A052D16B313E700409181 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E79A052C16B313E700409181 /* Default@2x.png */; };
+		E79A052F16B313E700409181 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E79A052E16B313E700409181 /* Default-568h@2x.png */; };
+		E79A053216B313E700409181 /* PlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79A053116B313E700409181 /* PlaygroundViewController.m */; };
+		E79A053516B313E700409181 /* PlaygroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79A053316B313E700409181 /* PlaygroundViewController.xib */; };
+		E79A053D16B313E700409181 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A053C16B313E700409181 /* SenTestingKit.framework */; };
+		E79A053E16B313E700409181 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A051816B313E700409181 /* UIKit.framework */; };
+		E79A053F16B313E700409181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A051A16B313E700409181 /* Foundation.framework */; };
+		E79A054716B313E700409181 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E79A054516B313E700409181 /* InfoPlist.strings */; };
+		E79A054A16B313E700409181 /* iOSPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E79A054916B313E700409181 /* iOSPlaygroundTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E79A054016B313E700409181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E79A050B16B313E700409181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E79A051316B313E700409181;
+			remoteInfo = iOSPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E79A051416B313E700409181 /* iOSPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79A051816B313E700409181 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E79A051A16B313E700409181 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E79A051C16B313E700409181 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E79A052016B313E700409181 /* iOSPlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSPlayground-Info.plist"; sourceTree = "<group>"; };
+		E79A052216B313E700409181 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E79A052416B313E700409181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E79A052616B313E700409181 /* iOSPlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSPlayground-Prefix.pch"; sourceTree = "<group>"; };
+		E79A052716B313E700409181 /* PlaygroundAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundAppDelegate.h; sourceTree = "<group>"; };
+		E79A052816B313E700409181 /* PlaygroundAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundAppDelegate.m; sourceTree = "<group>"; };
+		E79A052A16B313E700409181 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E79A052C16B313E700409181 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E79A052E16B313E700409181 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E79A053016B313E700409181 /* PlaygroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundViewController.h; sourceTree = "<group>"; };
+		E79A053116B313E700409181 /* PlaygroundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundViewController.m; sourceTree = "<group>"; };
+		E79A053416B313E700409181 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlaygroundViewController.xib; sourceTree = "<group>"; };
+		E79A053B16B313E700409181 /* iOSPlaygroundTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPlaygroundTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79A053C16B313E700409181 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E79A054416B313E700409181 /* iOSPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
+		E79A054616B313E700409181 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E79A054816B313E700409181 /* iOSPlaygroundTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSPlaygroundTests.h; sourceTree = "<group>"; };
+		E79A054916B313E700409181 /* iOSPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSPlaygroundTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E79A051116B313E700409181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A051916B313E700409181 /* UIKit.framework in Frameworks */,
+				E79A051B16B313E700409181 /* Foundation.framework in Frameworks */,
+				E79A051D16B313E700409181 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79A053716B313E700409181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A053D16B313E700409181 /* SenTestingKit.framework in Frameworks */,
+				E79A053E16B313E700409181 /* UIKit.framework in Frameworks */,
+				E79A053F16B313E700409181 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E79A050916B313E700409181 = {
+			isa = PBXGroup;
+			children = (
+				E79A051E16B313E700409181 /* iOSPlayground */,
+				E79A054216B313E700409181 /* iOSPlaygroundTests */,
+				E79A051716B313E700409181 /* Frameworks */,
+				E79A051516B313E700409181 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E79A051516B313E700409181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E79A051416B313E700409181 /* iOSPlayground.app */,
+				E79A053B16B313E700409181 /* iOSPlaygroundTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E79A051716B313E700409181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79A051816B313E700409181 /* UIKit.framework */,
+				E79A051A16B313E700409181 /* Foundation.framework */,
+				E79A051C16B313E700409181 /* CoreGraphics.framework */,
+				E79A053C16B313E700409181 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E79A051E16B313E700409181 /* iOSPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				E79A052716B313E700409181 /* PlaygroundAppDelegate.h */,
+				E79A052816B313E700409181 /* PlaygroundAppDelegate.m */,
+				E79A053016B313E700409181 /* PlaygroundViewController.h */,
+				E79A053116B313E700409181 /* PlaygroundViewController.m */,
+				E79A053316B313E700409181 /* PlaygroundViewController.xib */,
+				E79A051F16B313E700409181 /* Supporting Files */,
+			);
+			path = iOSPlayground;
+			sourceTree = "<group>";
+		};
+		E79A051F16B313E700409181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79A052016B313E700409181 /* iOSPlayground-Info.plist */,
+				E79A052116B313E700409181 /* InfoPlist.strings */,
+				E79A052416B313E700409181 /* main.m */,
+				E79A052616B313E700409181 /* iOSPlayground-Prefix.pch */,
+				E79A052A16B313E700409181 /* Default.png */,
+				E79A052C16B313E700409181 /* Default@2x.png */,
+				E79A052E16B313E700409181 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E79A054216B313E700409181 /* iOSPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				E79A054816B313E700409181 /* iOSPlaygroundTests.h */,
+				E79A054916B313E700409181 /* iOSPlaygroundTests.m */,
+				E79A054316B313E700409181 /* Supporting Files */,
+			);
+			path = iOSPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		E79A054316B313E700409181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79A054416B313E700409181 /* iOSPlaygroundTests-Info.plist */,
+				E79A054516B313E700409181 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E79A051316B313E700409181 /* iOSPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79A054D16B313E700409181 /* Build configuration list for PBXNativeTarget "iOSPlayground" */;
+			buildPhases = (
+				E79A051016B313E700409181 /* Sources */,
+				E79A051116B313E700409181 /* Frameworks */,
+				E79A051216B313E700409181 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSPlayground;
+			productName = iOSPlayground;
+			productReference = E79A051416B313E700409181 /* iOSPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E79A053A16B313E700409181 /* iOSPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79A055016B313E700409181 /* Build configuration list for PBXNativeTarget "iOSPlaygroundTests" */;
+			buildPhases = (
+				E79A053616B313E700409181 /* Sources */,
+				E79A053716B313E700409181 /* Frameworks */,
+				E79A053816B313E700409181 /* Resources */,
+				E79A053916B313E700409181 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E79A054116B313E700409181 /* PBXTargetDependency */,
+			);
+			name = iOSPlaygroundTests;
+			productName = iOSPlaygroundTests;
+			productReference = E79A053B16B313E700409181 /* iOSPlaygroundTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E79A050B16B313E700409181 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Playground;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Mullen, LLC.";
+			};
+			buildConfigurationList = E79A050E16B313E700409181 /* Build configuration list for PBXProject "iOSPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E79A050916B313E700409181;
+			productRefGroup = E79A051516B313E700409181 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E79A051316B313E700409181 /* iOSPlayground */,
+				E79A053A16B313E700409181 /* iOSPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E79A051216B313E700409181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A052316B313E700409181 /* InfoPlist.strings in Resources */,
+				E79A052B16B313E700409181 /* Default.png in Resources */,
+				E79A052D16B313E700409181 /* Default@2x.png in Resources */,
+				E79A052F16B313E700409181 /* Default-568h@2x.png in Resources */,
+				E79A053516B313E700409181 /* PlaygroundViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79A053816B313E700409181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A054716B313E700409181 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E79A053916B313E700409181 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E79A051016B313E700409181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A052516B313E700409181 /* main.m in Sources */,
+				E79A052916B313E700409181 /* PlaygroundAppDelegate.m in Sources */,
+				E79A053216B313E700409181 /* PlaygroundViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79A053616B313E700409181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A054A16B313E700409181 /* iOSPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E79A054116B313E700409181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E79A051316B313E700409181 /* iOSPlayground */;
+			targetProxy = E79A054016B313E700409181 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E79A052116B313E700409181 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79A052216B313E700409181 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E79A053316B313E700409181 /* PlaygroundViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79A053416B313E700409181 /* en */,
+			);
+			name = PlaygroundViewController.xib;
+			sourceTree = "<group>";
+		};
+		E79A054516B313E700409181 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79A054616B313E700409181 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E79A054B16B313E700409181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E79A054C16B313E700409181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E79A054E16B313E700409181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSPlayground/iOSPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSPlayground/iOSPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E79A054F16B313E700409181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSPlayground/iOSPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSPlayground/iOSPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E79A055116B313E700409181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSPlayground.app/iOSPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSPlayground/iOSPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSPlaygroundTests/iOSPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E79A055216B313E700409181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSPlayground.app/iOSPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSPlayground/iOSPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSPlaygroundTests/iOSPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E79A050E16B313E700409181 /* Build configuration list for PBXProject "iOSPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A054B16B313E700409181 /* Debug */,
+				E79A054C16B313E700409181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E79A054D16B313E700409181 /* Build configuration list for PBXNativeTarget "iOSPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A054E16B313E700409181 /* Debug */,
+				E79A054F16B313E700409181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E79A055016B313E700409181 /* Build configuration list for PBXNativeTarget "iOSPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A055116B313E700409181 /* Debug */,
+				E79A055216B313E700409181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E79A050B16B313E700409181 /* Project object */;
+}
