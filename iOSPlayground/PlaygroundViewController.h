@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlaygroundViewController : UIViewController
+@interface PlaygroundViewController : UIViewController <UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *playgroundAreaView;
+@property (nonatomic, strong) NSArray *playgroundAreas;
 
 @end
