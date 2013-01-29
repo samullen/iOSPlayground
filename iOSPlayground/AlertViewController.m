@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.view.backgroundColor = [UIColor blackColor];
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -35,6 +34,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)doDismiss:(id)sender {
+  [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

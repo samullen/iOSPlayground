@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface AlertViewController : UIViewController
+{
+}
+
+- (IBAction)doDismiss:(id)sender;
 
 @end

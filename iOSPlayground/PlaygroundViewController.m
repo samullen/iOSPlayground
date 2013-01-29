@@ -25,7 +25,8 @@
     @{@"label" : @"Alert",
       @"description": @"Playing with alert modals",
       @"controller": [[AlertViewController alloc] init]},
-    @{@"label" : @"Tab Bar", @"description": @"Playing with the Tab Bar"}
+    @{@"label" : @"Tab Bar",
+      @"description": @"Playing with the Tab Bar"},
   ];
   
   self.view.backgroundColor = [UIColor whiteColor];
@@ -84,11 +85,11 @@
 - (void)        tableView:(UITableView *)tableView
   didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSLog(@"got here");
   if ([tableView isEqual:self.playgroundAreaView]) {
-    NSLog(@"got here");
-    UIViewController* controller = [self.playgroundAreas[indexPath.row] objectForKey:@"controller"];
-    [self presentViewController:controller animated:YES completion:nil];
+    if ([self.playgroundAreas[indexPath.row] objectForKey:@"controller"]) {
+      UIViewController* controller = [self.playgroundAreas[indexPath.row] objectForKey:@"controller"];
+      [self presentViewController:controller animated:YES completion:nil];
+    }
   }
 }
 
