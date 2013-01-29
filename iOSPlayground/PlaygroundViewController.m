@@ -7,6 +7,7 @@
 //
 
 #import "PlaygroundViewController.h"
+#import "AlertViewController.h"
 
 @interface PlaygroundViewController ()
 
@@ -21,8 +22,10 @@
   [super viewDidLoad];
   
   playgroundAreas = @[
-    [NSDictionary dictionaryWithObjectsAndKeys:
-     @"Tab Bar", @"label", @"Playing with the Tab Bar", @"description", nil],
+    @{@"label" : @"Alert",
+      @"description": @"Playing with alert modals",
+      @"controller": [[AlertViewController alloc] init]},
+    @{@"label" : @"Tab Bar", @"description": @"Playing with the Tab Bar"}
   ];
   
   self.view.backgroundColor = [UIColor whiteColor];
@@ -31,6 +34,7 @@
     [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
   
   self.playgroundAreaView.dataSource = self;
+  self.playgroundAreaView.delegate = self;
   
   self.playgroundAreaView.autoresizingMask =
     UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -38,18 +42,21 @@
   [self.view addSubview:self.playgroundAreaView];
 }
 
+//
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+//
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
   return [self.playgroundAreas count];
 }
 
+//
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -72,6 +79,17 @@
   }
 
   return result;
+}
+
+- (void)        tableView:(UITableView *)tableView
+  didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSLog(@"got here");
+  if ([tableView isEqual:self.playgroundAreaView]) {
+    NSLog(@"got here");
+    UIViewController* controller = [self.playgroundAreas[indexPath.row] objectForKey:@"controller"];
+    [self presentViewController:controller animated:YES completion:nil];
+  }
 }
 
 @end
