@@ -88,6 +88,7 @@
   if ([tableView isEqual:self.playgroundAreaView]) {
     if ([self.playgroundAreas[indexPath.row] objectForKey:@"controller"]) {
       UIViewController* controller = [self.playgroundAreas[indexPath.row] objectForKey:@"controller"];
+//      controller.modalPresentationStyle = UIModalPresentationFormSheet;
       [self presentViewController:controller animated:YES completion:nil];
     }
   }

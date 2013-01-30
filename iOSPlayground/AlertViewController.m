@@ -37,7 +37,32 @@
 }
 
 - (IBAction)doDismiss:(id)sender {
-  [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+  NSString *message = @"Are you sure?";
+  
+  UIAlertView *alertView = [[UIAlertView alloc]
+                            initWithTitle:@"Dismiss Alert Page"
+                            message: message
+                            delegate:self
+                            cancelButtonTitle:[self noButtonTitle]
+                            otherButtonTitles:[self yesButtonTitle], nil];
+  [alertView show];
+}
+
+- (NSString *) yesButtonTitle {
+  return @"Yes";
+}
+- (NSString *) noButtonTitle {
+  return @"No";
+}
+
+- (void)     alertView:(UIAlertView *)alertView
+  clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+  NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
+  
+  if ([buttonTitle isEqualToString:[self yesButtonTitle]]) {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+  }
 }
 
 @end
